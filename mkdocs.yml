@@ -17,3 +17,14 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: grey
+      accent: indigo
+    - scheme: slate
+      primary: grey
+      accent: indigo
+
