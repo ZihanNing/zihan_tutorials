@@ -1,0 +1,19 @@
+site_name: Zihan Tutorials
+site_url: https://ZihanNing.github.io/zihan-tutorials/
+repo_url: https://github.com/ZihanNing/zihan-tutorials
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Tutorials:
+      - Getting started: tutorials/getting-started.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
