@@ -7,8 +7,11 @@ theme:
 
 nav:
   - Home: index.md
-  - Tutorials:
-      - Getting started: tutorials/getting-started.md
+  - Bloch Simulation:
+      - 1 - Basic Bloch Equation: bloch_simulation/1-basic_bloch_equ/index.md
+      - 2 - Bloch Simulation (Components): bloch_simulation/2-bloch_sim_comp/index.md
+  - Tutorials 2:
+      - Tutorials 2: tutorials2/Tutorials2.md
 
 plugins:
   - search
@@ -17,6 +20,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.arithmatex
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
   name: material
