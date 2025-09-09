@@ -1,5 +1,7 @@
 # 2. Bloch Simulation (Components)
 
+> *In this section, you will learn the expressions of various components (i.e., relaxation, RF rotation, gradient rotation, etc.) as they apply to magnetization, and how to compute their effects.*
+
 All embedded code could be found in: [ZN_branch modified based on MRSignalSeqs](https://github.com/ZihanNing/MRSignalsSeqs/tree/ZN_testing/Zihan_summary/Bloch_simulation)
 
 > **Summarized list**  
@@ -8,6 +10,9 @@ All embedded code could be found in: [ZN_branch modified based on MRSignalSeqs](
 > - RF Rotation (B1 along positive y-axis): [yrot.m](https://github.com/ZihanNing/MRSignalsSeqs/blob/ZN_testing/Zihan_summary/Bloch_simulation/yrot.m)  
 > - RF Rotation (flexible B1): [throt.m](https://github.com/ZihanNing/MRSignalsSeqs/blob/ZN_testing/Zihan_summary/Bloch_simulation/throt.m)  
 > - Gradient Rotation: [zrot.m](https://github.com/ZihanNing/MRSignalsSeqs/blob/ZN_testing/Zihan_summary/Bloch_simulation/zrot.m)  
+> - Perfect Spoiler: set \\(M_x\\) and \\(M_y\\) as zero  
+> - Propagation: [abprop.m](https://github.com/ZihanNing/MRSignalsSeqs/blob/ZN_testing/Zihan_summary/Bloch_simulation/abprop.m)
+> - Real & Complex form: [mr2mc.m](https://github.com/ZihanNing/MRSignalsSeqs/blob/ZN_testing/Zihan_summary/Bloch_simulation/mr2mc.m) and [mc2mr.m](https://github.com/ZihanNing/MRSignalsSeqs/blob/ZN_testing/Zihan_summary/Bloch_simulation/mc2mr.m)
 
 
 

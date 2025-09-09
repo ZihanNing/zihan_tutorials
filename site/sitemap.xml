@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ZihanNing.github.io/zihan-tutorials/</loc>
-         <lastmod>2025-09-04</lastmod>
+         <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://ZihanNing.github.io/zihan-tutorials/tutorials/getting-started/</loc>
-         <lastmod>2025-09-04</lastmod>
+         <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/2-bloch_sim_comp/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://ZihanNing.github.io/zihan-tutorials/tutorials2/Tutorials2/</loc>
+         <lastmod>2025-09-08</lastmod>
     </url>
 </urlset>

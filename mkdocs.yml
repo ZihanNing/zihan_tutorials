@@ -10,11 +10,23 @@ nav:
   - Bloch Simulation:
       - 1 - Basic Bloch Equation: bloch_simulation/1-basic_bloch_equ/index.md
       - 2 - Bloch Simulation (Components): bloch_simulation/2-bloch_sim_comp/index.md
-  - Tutorials 2:
-      - Tutorials 2: tutorials2/Tutorials2.md
+  - SOP:
+      - MkDocs - blogging in an easy way: SOP/MkDocs/index.md
+      - tmux - detach the terminal and revisit again: SOP/tmux/index.md
+      
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true        # enables Material’s language switcher
+      fallback_to_default: true         # show CN page when EN missing
+      languages:
+        - locale: zh
+          name: 中文
+          default: true
+        - locale: en
+          name: English
 
 markdown_extensions:
   - admonition
