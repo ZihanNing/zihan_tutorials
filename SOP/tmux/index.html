@@ -8,26 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://ZihanNing.github.io/zihan-tutorials/">
+        <link rel="canonical" href="https://ZihanNing.github.io/zihan-tutorials/SOP/tmux/">
+      
+      
+        <link rel="prev" href="../MkDocs/">
       
       
       
-        <link rel="next" href="bloch_simulation/1-basic_bloch_equ/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Zihan Tutorials</title>
+        <title>tmux - detach the terminal and revisit again - Zihan Tutorials</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#tmux-terminal" class="md-skip">
           跳转至
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="Zihan Tutorials" class="md-header__button md-logo" aria-label="Zihan Tutorials" data-md-component="logo">
+    <a href="../.." title="Zihan Tutorials" class="md-header__button md-logo" aria-label="Zihan Tutorials" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              tmux - detach the terminal and revisit again
             
           </span>
         </div>
@@ -147,13 +147,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/zihan-tutorials/" hreflang="zh" class="md-select__link">
+            <a href="./" hreflang="zh" class="md-select__link">
               中文
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/zihan-tutorials/en/" hreflang="en" class="md-select__link">
+            <a href="../../en/SOP/tmux/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -242,7 +242,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Zihan Tutorials" class="md-nav__button md-logo" aria-label="Zihan Tutorials" data-md-component="logo">
+    <a href="../.." title="Zihan Tutorials" class="md-nav__button md-logo" aria-label="Zihan Tutorials" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -269,19 +269,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -292,7 +283,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -342,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bloch_simulation/1-basic_bloch_equ/" class="md-nav__link">
+      <a href="../../bloch_simulation/1-basic_bloch_equ/" class="md-nav__link">
         
   
   
@@ -365,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bloch_simulation/2-bloch_sim_comp/" class="md-nav__link">
+      <a href="../../bloch_simulation/2-bloch_sim_comp/" class="md-nav__link">
         
   
   
@@ -392,18 +382,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -419,7 +411,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             SOP
@@ -433,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SOP/MkDocs/" class="md-nav__link">
+      <a href="../MkDocs/" class="md-nav__link">
         
   
   
@@ -453,10 +445,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="SOP/tmux/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    tmux - detach the terminal and revisit again
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -467,6 +481,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      适用场景 🌟
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-gadgetron-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1. 从本地电脑登录 Gadgetron server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-server-tmux-gadgetron-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2. 在 server 上用 tmux 开启 gadgetron client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3. 重新进入 tmux 会话
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ 常见坑 &amp; 小贴士
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎉 总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -499,6 +596,77 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      适用场景 🌟
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-gadgetron-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1. 从本地电脑登录 Gadgetron server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-server-tmux-gadgetron-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2. 在 server 上用 tmux 开启 gadgetron client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3. 重新进入 tmux 会话
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ 常见坑 &amp; 小贴士
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎉 总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -516,15 +684,95 @@
   
 
 
-<h1 id="welcome">Welcome</h1>
-<p>This is Zihan’s tutorial hub.</p>
+<h1 id="tmux-terminal">🖥️ tmux – 让 terminal 脱离笔电也能继续跑 🚀</h1>
+<h2 id="_1">适用场景 🌟</h2>
+<p>如果你经常需要：</p>
 <ul>
-<li>👉 Head to <strong><a href="/tutorials/">Tutorials</a></strong> to browse all guides.</li>
-<li>New here? Start with <strong><a href="/tutorials/01-first-steps/">First steps</a></strong>.</li>
+<li>在 <strong>远程服务器</strong> 上跑一些 <strong>长期任务</strong>（比如训练模型、跑仿真、跑 Gadgetron client）；</li>
+<li>担心 <strong>笔记本断网/休眠/关掉 SSH</strong> 就导致程序被杀掉；</li>
+<li>想随时 <strong>detach</strong> 和 <strong>re-attach</strong>，在不同地方继续工作；</li>
 </ul>
-<blockquote>
-<p>Tips: Use the left sidebar to navigate. Each tutorial is 10–15 minutes.</p>
-</blockquote>
+<p>那你就一定要试试 <strong>tmux</strong>！它能帮你把任务挂在后台，像开了个“虚拟屏幕”一样随时进入/退出。</p>
+<hr />
+<h2 id="_2">背景</h2>
+<p>我平时负责医院里 <strong>inline reconstruction 平台</strong>的维护工作，目前主要基于 <a href="https://github.com/gadgetron/gadgetron">Gadgetron</a> 搭建。我们在这个平台上开发和移植了不少重建算法（详见 <a href="https://github.com/ZihanNing/Practical_Inline_Recon_Framework-public.git">我的框架介绍</a>）。其中，<strong>head motion correction 重建算法</strong>会在 <strong>TwinsUK Project</strong> 的扫描中定期使用（基本上每周三、四，大约 16 人次）。</p>
+<p>为了保证平台稳定运行，维护人员需要做到两点：</p>
+<ul>
+<li>✅ 确保 <strong>Gadgetron client</strong> 每周在 server 上被正确激活</li>
+<li>✅ 能随时远程读取 <strong>Gadgetron server log</strong></li>
+</ul>
+<p>问题是：我经常需要远程办公。所以，怎么保证 <strong>client 持续运行</strong> 且 <strong>我断开 SSH 后不受影响</strong>？答案就是：<strong>tmux！</strong></p>
+<hr />
+<h2 id="step-1-gadgetron-server">Step 1. 从本地电脑登录 Gadgetron server</h2>
+<p>由于 server 在医院内网，不能直接 SSH，需要先通过 <strong>bouncer</strong> 作为跳板机。</p>
+<p>先在本地（Macbook Air）打开 terminal，输入：</p>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">4003</span>:&lt;gadgetron_server_ID&gt;:4000<span class="w"> </span>&lt;user&gt;@bouncer.&lt;bouncer_address&gt;
+</code></pre></div>
+<ul>
+<li><code>-L</code> 用于端口转发，这里是把本地的 4003 端口映射到内网 Gadgetron server 的 4000 端口。</li>
+</ul>
+<p>进入 bouncer 后，再跳转到 Gadgetron server：</p>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>gadgetron@&lt;gadgetron_server_ID&gt;
+</code></pre></div>
+<hr />
+<h2 id="step-2-server-tmux-gadgetron-client">Step 2. 在 server 上用 tmux 开启 gadgetron client</h2>
+<p>如果直接在 SSH session 里跑 client，一旦关闭笔电终端，程序就会中断。
+<strong>解决办法：用 tmux 开启一个独立的“持久化终端”。</strong></p>
+<p>新建一个 tmux 会话（<code>-s</code> 后面是给会话起的名字，比如 <code>gadgetron_client</code>）：</p>
+<div class="highlight"><pre><span></span><code>tmux<span class="w"> </span>new<span class="w"> </span>-s<span class="w"> </span>&lt;the_name_of_terminal&gt;
+</code></pre></div>
+<p>进入会话后，就可以启动 Gadgetron client（这里用的是我写的脚本）：</p>
+<div class="highlight"><pre><span></span><code>./activate_gadgetron.sh
+</code></pre></div>
+<p>👉 这个脚本会在 <strong>9002 端口</strong>上启动 Gadgetron client，保持运行状态。</p>
+<p>如果想让 tmux 会话在后台继续跑，只需 <strong>detach</strong>：</p>
+<div class="highlight"><pre><span></span><code>Ctrl+b 然后按 d
+</code></pre></div>
+<p>这样即使你关掉 Macbook 的 SSH 终端，client 也不会被杀掉。</p>
+<hr />
+<h2 id="step-3-tmux">Step 3. 重新进入 tmux 会话</h2>
+<p>当你下次想查看 log 或确认 client 状态时，可以重新 attach 回去：</p>
+<div class="highlight"><pre><span></span><code>tmux<span class="w"> </span>attach<span class="w"> </span>-t<span class="w"> </span>&lt;the_name_of_terminal&gt;
+</code></pre></div>
+<p>如果忘了会话名，可以先列出所有 tmux 会话：</p>
+<div class="highlight"><pre><span></span><code>tmux<span class="w"> </span>ls
+</code></pre></div>
+<hr />
+<h2 id="_3">⚡ 常见坑 &amp; 小贴士</h2>
+<ul>
+<li>
+<p><strong>会话忘记名字？</strong>
+  用 <code>tmux ls</code> 查一下。</p>
+</li>
+<li>
+<p><strong>会话挂掉了？</strong>
+  有时候脚本跑挂了，会话还在。可以先退出：</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>tmux<span class="w"> </span>kill-session<span class="w"> </span>-t<span class="w"> </span>&lt;the_name_of_terminal&gt;
+</code></pre></div>
+<p>然后重新开一个。</p>
+<ul>
+<li>
+<p><strong>开太多会话？</strong>
+  注意 <code>tmux ls</code> 会列出来所有会话，保持干净有序比较好维护。</p>
+</li>
+<li>
+<p><strong>端口冲突？</strong>
+  如果 Gadgetron client 启动时 9002 已经被占用，可以用 <code>lsof -i:9002</code> 查看占用进程并结束它。</p>
+</li>
+<li>
+<p><strong>日志快速查看</strong> 📜
+  想实时盯日志，可以直接在 tmux 里跑：</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-f<span class="w"> </span>log/subcall_log_xxx.txt
+</code></pre></div>
+<p>这样就不用每次新开窗口了。</p>
+<hr />
+<h2 id="_4">🎉 总结</h2>
+<p>利用 <code>tmux</code>，我就能在远程 server 上挂一个 <strong>长期运行的 gadgetron client</strong>，而不用担心关掉 SSH 或笔记本休眠后进程被中断。</p>
+<p>这样一来，我就可以安心 WFH，同时保持 TwinsUK Project 的 inline reconstruction 平台 <strong>稳定运行</strong>！💪</p>
 
 
 
@@ -573,10 +821,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
