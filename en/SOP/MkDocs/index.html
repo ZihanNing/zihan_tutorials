@@ -495,13 +495,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-sop-standard-operating-procedures" class="md-nav__link">
+  <a href="#3-common-sop" class="md-nav__link">
     <span class="md-ellipsis">
-      Common SOP (Standard Operating Procedures)
+      3. Common SOP
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Common SOP (Standard Operating Procedures)">
+    <nav class="md-nav" aria-label="3. Common SOP">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -526,6 +526,24 @@
   <a href="#c-one-click-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       C. One-Click Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-branch-workflow-for-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. Branch Workflow for Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-deployment-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Deployment Troubleshooting
     </span>
   </a>
   
@@ -620,13 +638,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-sop-standard-operating-procedures" class="md-nav__link">
+  <a href="#3-common-sop" class="md-nav__link">
     <span class="md-ellipsis">
-      Common SOP (Standard Operating Procedures)
+      3. Common SOP
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Common SOP (Standard Operating Procedures)">
+    <nav class="md-nav" aria-label="3. Common SOP">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -651,6 +669,24 @@
   <a href="#c-one-click-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       C. One-Click Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-branch-workflow-for-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. Branch Workflow for Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-deployment-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. Deployment Troubleshooting
     </span>
   </a>
   
@@ -775,7 +811,8 @@ To update, simply add new markdown files under <code>docs/</code> and run:</p>
 </code></pre></div>
 <p>Your GitHub Pages site will be updated instantly.</p>
 <hr />
-<h2 id="common-sop-standard-operating-procedures">Common SOP (Standard Operating Procedures)</h2>
+<hr />
+<h2 id="3-common-sop">3. <strong>Common SOP</strong></h2>
 <h3 id="a-add-a-new-article">A. Add a New Article</h3>
 <ol>
 <li>Create new Markdown files under <code>docs/</code>:</li>
@@ -790,36 +827,73 @@ touch<span class="w"> </span>docs/tutorial1.en.md
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">教程一</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tutorial1.zh.md</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Tutorial 1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tutorial1.en.md</span>
 </code></pre></div>
-3. Save, then preview or publish as needed.</p>
+3. Save, then preview or publish.</p>
 <hr />
 <h3 id="b-local-debugging">B. Local Debugging</h3>
 <blockquote>
-<p>⚠️ If you installed MkDocs and its plugins inside a virtual environment (<code>.venv</code>), you must activate it first.</p>
+<p>⚠️ If MkDocs/plugins were installed inside <code>.venv</code>, activate it first.</p>
 </blockquote>
 <ol>
-<li>Activate the virtual environment:</li>
+<li>Activate virtual environment:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+<p><div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
 </code></pre></div>
-<p>(You’ll see <code>(.venv)</code> at the start of the command line once activated.)
-2. Start local preview:</p>
+2. Preview locally:</p>
 <p><div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
-3. Open <code>http://127.0.0.1:8000</code> in your browser. Edits will auto-refresh.</p>
-<p>Exit the virtual environment:</p>
+3. Open <code>http://127.0.0.1:8000</code>.</p>
+<p>Exit:</p>
 <div class="highlight"><pre><span></span><code>deactivate
 </code></pre></div>
 <hr />
 <h3 id="c-one-click-deployment">C. One-Click Deployment</h3>
 <ol>
-<li>Activate the virtual environment (if using <code>.venv</code>):</li>
+<li>Activate <code>.venv</code> (if used):</li>
 </ol>
 <p><div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
 </code></pre></div>
-2. Deploy to GitHub Pages:</p>
+2. Deploy:</p>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
 </code></pre></div>
-<p>Your site will update on GitHub Pages within seconds.</p>
+<p>Site updates on GitHub Pages within seconds.</p>
+<hr />
+<h3 id="d-branch-workflow-for-deployment">D. Branch Workflow for Deployment</h3>
+<p>If you work in a feature branch (e.g. <code>docs/bloch_simulation</code>):</p>
+<ol>
+<li>Commit changes on feature branch:</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>docs/bloch_simulation
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;update bloch simulation docs&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>docs/bloch_simulation
+</code></pre></div>
+2. Merge into main:</p>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+git<span class="w"> </span>merge<span class="w"> </span>docs/bloch_simulation
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+3. Deploy from main:</p>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<hr />
+<h3 id="e-deployment-troubleshooting">E. Deployment Troubleshooting</h3>
+<p>If you see ❌ GitHub Actions failures (while <code>gh-deploy</code> succeeds):</p>
+<ol>
+<li>List workflows:</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-R<span class="w"> </span>.github/workflows
+</code></pre></div>
+2. Remove the unnecessary deploy workflow:</p>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>rm<span class="w"> </span>.github/workflows/&lt;filename&gt;.yml
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;remove GitHub Actions deploy workflow&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+3. Make sure <strong>Settings → Pages → Source</strong> is set to <code>gh-pages</code>.
+4. Deploy again:</p>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<hr />
 
 
 
