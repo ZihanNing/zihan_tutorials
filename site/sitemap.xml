@@ -1,23 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://ZihanNing.github.io/zihan-tutorials/</loc>
-         <lastmod>2025-09-08</lastmod>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/"/>
     </url>
     <url>
-         <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/</loc>
-         <lastmod>2025-09-08</lastmod>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/SOP/MkDocs/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/SOP/MkDocs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/SOP/MkDocs/"/>
     </url>
     <url>
-         <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/</loc>
-         <lastmod>2025-09-08</lastmod>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/SOP/tmux/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/SOP/tmux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/SOP/tmux/"/>
     </url>
     <url>
-         <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/2-bloch_sim_comp/</loc>
-         <lastmod>2025-09-08</lastmod>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/1-basic_bloch_equ/"/>
     </url>
     <url>
-         <loc>https://ZihanNing.github.io/zihan-tutorials/tutorials2/Tutorials2/</loc>
-         <lastmod>2025-09-08</lastmod>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/1-basic_bloch_equ/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/2-bloch_sim_comp/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/2-bloch_sim_comp/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/2-bloch_sim_comp/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/en/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/en/SOP/MkDocs/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/SOP/MkDocs/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/SOP/MkDocs/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/en/SOP/tmux/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/SOP/tmux/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/SOP/tmux/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/1-basic_bloch_equ/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/1-basic_bloch_equ/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/1-basic_bloch_equ/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/1-basic_bloch_equ/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/1-basic_bloch_equ/"/>
+    </url>
+    <url>
+        <loc>https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/2-bloch_sim_comp/</loc>
+        <lastmod>2025-09-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ZihanNing.github.io/zihan-tutorials/en/bloch_simulation/2-bloch_sim_comp/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://ZihanNing.github.io/zihan-tutorials/bloch_simulation/2-bloch_sim_comp/"/>
     </url>
 </urlset>
