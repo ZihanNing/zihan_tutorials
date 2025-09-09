@@ -159,7 +159,9 @@ Your GitHub Pages site will be updated instantly.
 
 ---
 
-## Common SOP (Standard Operating Procedures)
+---
+
+## 3. **Common SOP**
 
 ### A. Add a New Article
 
@@ -178,29 +180,27 @@ Your GitHub Pages site will be updated instantly.
          - 教程一: tutorial1.zh.md
          - Tutorial 1: tutorial1.en.md
    ```
-3. Save, then preview or publish as needed.
+3. Save, then preview or publish.
 
 ---
 
 ### B. Local Debugging
 
-> ⚠️ If you installed MkDocs and its plugins inside a virtual environment (`.venv`), you must activate it first.
+> ⚠️ If MkDocs/plugins were installed inside `.venv`, activate it first.
 
-1. Activate the virtual environment:
+1. Activate virtual environment:
 
    ```bash
    source .venv/bin/activate
    ```
-
-   (You’ll see `(.venv)` at the start of the command line once activated.)
-2. Start local preview:
+2. Preview locally:
 
    ```bash
    mkdocs serve
    ```
-3. Open `http://127.0.0.1:8000` in your browser. Edits will auto-refresh.
+3. Open `http://127.0.0.1:8000`.
 
-Exit the virtual environment:
+Exit:
 
 ```bash
 deactivate
@@ -210,16 +210,70 @@ deactivate
 
 ### C. One-Click Deployment
 
-1. Activate the virtual environment (if using `.venv`):
+1. Activate `.venv` (if used):
 
    ```bash
    source .venv/bin/activate
    ```
-2. Deploy to GitHub Pages:
+2. Deploy:
 
    ```bash
    mkdocs gh-deploy
    ```
 
-Your site will update on GitHub Pages within seconds.
+Site updates on GitHub Pages within seconds.
 
+---
+
+### D. Branch Workflow for Deployment
+
+If you work in a feature branch (e.g. `docs/bloch_simulation`):
+
+1. Commit changes on feature branch:
+
+   ```bash
+   git checkout docs/bloch_simulation
+   git add .
+   git commit -m "update bloch simulation docs"
+   git push origin docs/bloch_simulation
+   ```
+2. Merge into main:
+
+   ```bash
+   git checkout main
+   git pull origin main
+   git merge docs/bloch_simulation
+   git push origin main
+   ```
+3. Deploy from main:
+
+   ```bash
+   mkdocs gh-deploy
+   ```
+
+---
+
+### E. Deployment Troubleshooting
+
+If you see ❌ GitHub Actions failures (while `gh-deploy` succeeds):
+
+1. List workflows:
+
+   ```bash
+   ls -R .github/workflows
+   ```
+2. Remove the unnecessary deploy workflow:
+
+   ```bash
+   git rm .github/workflows/<filename>.yml
+   git commit -m "remove GitHub Actions deploy workflow"
+   git push origin main
+   ```
+3. Make sure **Settings → Pages → Source** is set to `gh-pages`.
+4. Deploy again:
+
+   ```bash
+   mkdocs gh-deploy
+   ```
+
+---

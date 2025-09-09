@@ -157,17 +157,17 @@ mkdocs gh-deploy
 
 就能快速更新 GitHub Pages。
 
-## 常用操作清单（SOP）
+## 3. **常用操作清单**
 
-### A. 新增文章 SOP
+### A. 新增文章
 
-1. 在 `docs/` 文件夹里新建 Markdown 文件，例如：
+1. 在 `docs/` 文件夹中新建 Markdown 文件：
 
    ```bash
    touch docs/tutorial1.zh.md
    touch docs/tutorial1.en.md
    ```
-2. 在 `mkdocs.yml` 中的导航（`nav`）添加链接：
+2. 在 `mkdocs.yml` 的 `nav` 中添加：
 
    ```yaml
    nav:
@@ -176,27 +176,25 @@ mkdocs gh-deploy
          - 教程一: tutorial1.zh.md
          - Tutorial 1: tutorial1.en.md
    ```
-3. 保存后即可在本地预览/发布。
+3. 保存后即可预览或发布。
 
 ---
 
-### B. 本地调试 SOP
+### B. 本地调试
 
-> ⚠️ 如果你是用虚拟环境（`.venv`）安装的 mkdocs 和插件，必须先进入虚拟环境，否则命令不可用。
+> ⚠️ 如果 MkDocs/插件安装在 `.venv` 中，必须先进入虚拟环境。
 
-1. 进入虚拟环境：
+1. 激活虚拟环境：
 
    ```bash
    source .venv/bin/activate
    ```
-
-   成功后命令行前会出现 `(.venv)` 前缀。
-2. 启动本地预览：
+2. 本地预览：
 
    ```bash
    mkdocs serve
    ```
-3. 浏览器打开 `http://127.0.0.1:8000`，修改内容会自动刷新。
+3. 打开 `http://127.0.0.1:8000`。
 
 退出虚拟环境：
 
@@ -206,20 +204,74 @@ deactivate
 
 ---
 
-### C. 一键发布 SOP
+### C. 一键发布
 
-1. 激活虚拟环境（如果使用 `.venv`）：
+1. 激活 `.venv`（如果使用）：
 
    ```bash
    source .venv/bin/activate
    ```
-2. 发布到 GitHub Pages：
+2. 发布：
 
    ```bash
    mkdocs gh-deploy
    ```
 
-几秒后即可在 GitHub Pages 上更新。
+几秒钟后 GitHub Pages 即更新。
+
+---
+
+### D. 分支工作流部署
+
+如果在功能分支开发（如 `docs/bloch_simulation`）：
+
+1. 在分支提交：
+
+   ```bash
+   git checkout docs/bloch_simulation
+   git add .
+   git commit -m "update bloch simulation docs"
+   git push origin docs/bloch_simulation
+   ```
+2. 合并到 main：
+
+   ```bash
+   git checkout main
+   git pull origin main
+   git merge docs/bloch_simulation
+   git push origin main
+   ```
+3. 从 main 部署：
+
+   ```bash
+   mkdocs gh-deploy
+   ```
+
+---
+
+### E. 部署问题排查
+
+如果看到 ❌ GitHub Actions 失败（而 `gh-deploy` 成功）：
+
+1. 查看工作流文件：
+
+   ```bash
+   ls -R .github/workflows
+   ```
+2. 删除多余的部署工作流：
+
+   ```bash
+   git rm .github/workflows/<filename>.yml
+   git commit -m "remove GitHub Actions deploy workflow"
+   git push origin main
+   ```
+3. 确认 **Settings → Pages → Source** 设置为 `gh-pages`。
+4. 再次部署：
+
+   ```bash
+   mkdocs gh-deploy
+   ```
+
 
 
 
