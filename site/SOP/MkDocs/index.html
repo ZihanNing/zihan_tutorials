@@ -495,37 +495,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sop" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      常用操作清单（SOP）
+      3. 常用操作清单
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="常用操作清单（SOP）">
+    <nav class="md-nav" aria-label="3. 常用操作清单">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-sop" class="md-nav__link">
+  <a href="#a" class="md-nav__link">
     <span class="md-ellipsis">
-      A. 新增文章 SOP
+      A. 新增文章
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-sop" class="md-nav__link">
+  <a href="#b" class="md-nav__link">
     <span class="md-ellipsis">
-      B. 本地调试 SOP
+      B. 本地调试
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-sop" class="md-nav__link">
+  <a href="#c" class="md-nav__link">
     <span class="md-ellipsis">
-      C. 一键发布 SOP
+      C. 一键发布
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. 分支工作流部署
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. 部署问题排查
     </span>
   </a>
   
@@ -620,37 +638,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sop" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      常用操作清单（SOP）
+      3. 常用操作清单
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="常用操作清单（SOP）">
+    <nav class="md-nav" aria-label="3. 常用操作清单">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-sop" class="md-nav__link">
+  <a href="#a" class="md-nav__link">
     <span class="md-ellipsis">
-      A. 新增文章 SOP
+      A. 新增文章
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-sop" class="md-nav__link">
+  <a href="#b" class="md-nav__link">
     <span class="md-ellipsis">
-      B. 本地调试 SOP
+      B. 本地调试
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-sop" class="md-nav__link">
+  <a href="#c" class="md-nav__link">
     <span class="md-ellipsis">
-      C. 一键发布 SOP
+      C. 一键发布
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. 分支工作流部署
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. 部署问题排查
     </span>
   </a>
   
@@ -774,51 +810,87 @@ index.en.md
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
 </code></pre></div>
 <p>就能快速更新 GitHub Pages。</p>
-<h2 id="sop">常用操作清单（SOP）</h2>
-<h3 id="a-sop">A. 新增文章 SOP</h3>
+<h2 id="3">3. <strong>常用操作清单</strong></h2>
+<h3 id="a">A. 新增文章</h3>
 <ol>
-<li>在 <code>docs/</code> 文件夹里新建 Markdown 文件，例如：</li>
+<li>在 <code>docs/</code> 文件夹中新建 Markdown 文件：</li>
 </ol>
 <p><div class="highlight"><pre><span></span><code>touch<span class="w"> </span>docs/tutorial1.zh.md
 touch<span class="w"> </span>docs/tutorial1.en.md
 </code></pre></div>
-2. 在 <code>mkdocs.yml</code> 中的导航（<code>nav</code>）添加链接：</p>
+2. 在 <code>mkdocs.yml</code> 的 <code>nav</code> 中添加：</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Tutorials</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">教程一</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tutorial1.zh.md</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Tutorial 1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tutorial1.en.md</span>
 </code></pre></div>
-3. 保存后即可在本地预览/发布。</p>
+3. 保存后即可预览或发布。</p>
 <hr />
-<h3 id="b-sop">B. 本地调试 SOP</h3>
+<h3 id="b">B. 本地调试</h3>
 <blockquote>
-<p>⚠️ 如果你是用虚拟环境（<code>.venv</code>）安装的 mkdocs 和插件，必须先进入虚拟环境，否则命令不可用。</p>
+<p>⚠️ 如果 MkDocs/插件安装在 <code>.venv</code> 中，必须先进入虚拟环境。</p>
 </blockquote>
 <ol>
-<li>进入虚拟环境：</li>
+<li>激活虚拟环境：</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+<p><div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
 </code></pre></div>
-<p>成功后命令行前会出现 <code>(.venv)</code> 前缀。
-2. 启动本地预览：</p>
+2. 本地预览：</p>
 <p><div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
-3. 浏览器打开 <code>http://127.0.0.1:8000</code>，修改内容会自动刷新。</p>
+3. 打开 <code>http://127.0.0.1:8000</code>。</p>
 <p>退出虚拟环境：</p>
 <div class="highlight"><pre><span></span><code>deactivate
 </code></pre></div>
 <hr />
-<h3 id="c-sop">C. 一键发布 SOP</h3>
+<h3 id="c">C. 一键发布</h3>
 <ol>
-<li>激活虚拟环境（如果使用 <code>.venv</code>）：</li>
+<li>激活 <code>.venv</code>（如果使用）：</li>
 </ol>
 <p><div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
 </code></pre></div>
-2. 发布到 GitHub Pages：</p>
+2. 发布：</p>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
 </code></pre></div>
-<p>几秒后即可在 GitHub Pages 上更新。</p>
+<p>几秒钟后 GitHub Pages 即更新。</p>
+<hr />
+<h3 id="d">D. 分支工作流部署</h3>
+<p>如果在功能分支开发（如 <code>docs/bloch_simulation</code>）：</p>
+<ol>
+<li>在分支提交：</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>docs/bloch_simulation
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;update bloch simulation docs&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>docs/bloch_simulation
+</code></pre></div>
+2. 合并到 main：</p>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+git<span class="w"> </span>merge<span class="w"> </span>docs/bloch_simulation
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+3. 从 main 部署：</p>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<hr />
+<h3 id="e">E. 部署问题排查</h3>
+<p>如果看到 ❌ GitHub Actions 失败（而 <code>gh-deploy</code> 成功）：</p>
+<ol>
+<li>查看工作流文件：</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-R<span class="w"> </span>.github/workflows
+</code></pre></div>
+2. 删除多余的部署工作流：</p>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>rm<span class="w"> </span>.github/workflows/&lt;filename&gt;.yml
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;remove GitHub Actions deploy workflow&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+3. 确认 <strong>Settings → Pages → Source</strong> 设置为 <code>gh-pages</code>。
+4. 再次部署：</p>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
 
 
 
