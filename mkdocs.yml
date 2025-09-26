@@ -13,10 +13,10 @@ nav:
       - 3 - Bloch Simulation (Demos/Examples): bloch_simulation/3-bloch_sim_demos/index.md
   - SOP:
       - MkDocs - blogging in an easy way: SOP/MkDocs/index.md
+      - Git - version control system: SOP/git/index.md
       - tmux - detach the terminal and revisit again: SOP/tmux/index.md
   - My Collections:
       - My MR collections: toolbox/mr_toolbox/index.md
-      
 
 plugins:
   - search
